@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <style>
+        /* Estilos básicos para a calculadora */
+        .calculadora {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        button {
+            padding: 10px;
+            font-size: 18px;
+        }
+        #resultado {
+            grid-column: span 4;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="numero1" placeholder="Número 1">
+        <input type="text" id="numero2" placeholder="Número 2">
+        <input type="text" id="resultado" readonly>
+        <button onclick="soma()">Soma</button>
+        <button onclick="subtracao()">Subtração</button>
+        <button onclick="divisao()">Divisão</button>
+        <button onclick="multiplicacao()">Multiplicação</button>
+        <button onclick="porcentagem()">Porcentagem</button>
+        <button onclick="logaritmo()">Logaritmo</button>
+        <button onclick="exponenciacao()">Exponenciação</button>
+        <button onclick="radiciacao()">Radiciação</button>
+        <button onclick="fatorial()">Fatorial</button>
+        <button onclick="seno()">Seno</button>
+        <button onclick="coseno()">Coseno</button>
+        <button onclick="tangente()">Tangente</button>
+        <button onclick="tangenteHiperbolica()">Tangente Hiperbólica</button>
+        <button onclick="senoHiperbolico()">Seno Hiperbólico</button>
+        <button onclick="cossenoHiperbolico()">Cosseno Hiperbólico</button>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
